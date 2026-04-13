@@ -22,5 +22,4 @@ class Calculator:
         return a ** 0.5
 
     def modulo(self, a, b):
-        return a % b  # Bugg: hanterar inte b == 0
-
+        return a % b
