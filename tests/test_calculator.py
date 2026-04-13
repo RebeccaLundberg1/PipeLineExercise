@@ -39,5 +39,6 @@ def test_divide_with_float():
 
 def test_divide_by_zero():
     calc = Calculator()
-    # Ändrat från pytest.raises eftersom din kod returnerar "Error"
-    assert calc.divide(10, 0) == "Error"
+    with pytest.raises(ValueError) as e:
+        calc.divide(10,0)
+    print(e.value)
