@@ -23,3 +23,4 @@ class Calculator:
 
     def modulo(self, a, b):
         return a % b  # Bugg: hanterar inte b == 0
+
