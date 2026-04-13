@@ -40,5 +40,5 @@ def test_divide_with_float():
 def test_divide_by_zero():
     calc = Calculator()
     with pytest.raises(ValueError) as e:
-        calc.divide(10,0)
-    print(e.value)
+        calc.divide(10, 0)
+    assert str(e.value) == "Kan inte dividera med noll"
