@@ -1,25 +1,16 @@
 class Calculator:
-    def add(self, a, b):
+    """En enkel miniräknare."""
+
+    def add(self, a: float, b: float) -> float:
         return a + b
 
-    def subtract(self, a, b):
+    def subtract(self, a: float, b: float) -> float:
         return a - b
 
-    def multiply(self, a, b):
+    def multiply(self, a: float, b: float) -> float:
         return a * b
 
-    def divide(self, a, b):
+    def divide(self, a: float, b: float) -> float:
         if b == 0:
-            return "Error"
+            raise ValueError("Kan inte dividera med noll")
         return a / b
-
-    def power(self, base, exp):
-        return base ** exp
-
-    def sqrt(self, a):
-        if a < 0:
-            return "Error"
-        return a ** 0.5
-
-    def modulo(self, a, b):
-        return a % b
